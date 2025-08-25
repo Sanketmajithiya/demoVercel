@@ -1,3 +1,21 @@
-<h1>Hello world</h1>
-<hr>
-<h2>{{ name }}</h2>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Test</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+
+    <h1>Hello world</h1>
+    <hr>
+    <h2>{{ name }}</h2>
+
+    <!-- JS -->
+    <script src="{% static 'myapp/script.js' %}"></script>
+</body>
+</html>
