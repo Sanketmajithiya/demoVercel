@@ -14,5 +14,7 @@
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/(.*)", "dest": "project/wsgi.py" }
   ],
-  "buildCommand": "./build_files.sh"
+  "installCommand": "echo installing...",
+  "outputDirectory": "",
+  "buildCommand": "npm run postinstall"
 }
